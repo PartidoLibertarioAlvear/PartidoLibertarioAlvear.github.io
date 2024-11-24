@@ -77,6 +77,12 @@ body {
   transition: all .5s ease-in-out;
 }
 
+.h2li {
+  color: white;
+  font-size: 10px;
+  padding: 10px;
+}
+
 .afiliate-btn {
   width: 100%;
   height: 40px;
