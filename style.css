@@ -23,7 +23,7 @@ body {
   justify-content: center;
   width: 90%;
   max-width: 500px;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.664);
   padding: 20px;
   text-align: center;
   margin: 0 auto;
@@ -53,7 +53,7 @@ body {
 }
 
 .box p {
-  text-align: justify;
+  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -71,14 +71,16 @@ body {
 }
 
 .box ul li a {
+  justify-content: center;
   text-align: center;
   color: white;
-  font-size: 35px;
-  padding: 10px;
+  font-size: 20px;
+  padding: 11px;
   transition: all .5s ease-in-out;
 }
 
 .h2li {
+  text-align: center;
   color: white;
   font-size: 10px;
   padding: 10px;
