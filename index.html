@@ -10,7 +10,13 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Contenedor principal -->
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="loader">
+      <img src="me.jpg" alt="Logo" class="logo">
+    </div>
+  </div>
+  <!-- Contenido principal -->
   <div class="contenido" style="display: none;">
     <section class="box">
       <img src="me.jpg" width="180" alt="" class="box-img">
@@ -31,19 +37,11 @@
     </section>
   </div>
 
-  <!-- Contenedor de carga -->
-  <div class="loader">
-    <img src="tu-logo.png" alt="Logo" class="logo">
-  </div>
-
   <script>
-    window.onload = function() {
-      console.log("Script ejecutado");
-      // Quitar el contenedor de carga
-      document.querySelector('.loader').style.display = 'none';
-      // Mostrar el contenido principal
-      document.querySelector('.contenido').style.display = 'block';
-    };
+    window.addEventListener("load", function() {
+      document.querySelector(".preloader").style.display = "none";
+      document.querySelector(".contenido").style.display = "block";
+    });
   </script>
 </body>
 </html>
