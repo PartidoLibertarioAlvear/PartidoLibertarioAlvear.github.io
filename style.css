@@ -22,8 +22,13 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #fff;
+  background: url('bg.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
   z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .loader {
@@ -39,6 +44,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -52,9 +58,15 @@ body {
 @keyframes carga {
   0% {
     transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0.5;
   }
   100% {
     transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
   }
 }
 
@@ -111,14 +123,14 @@ body {
 .box ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .box ul li {
-  margin-right: 20px;
+  margin: 0 10px;
 }
 
 .box ul li a {
@@ -136,6 +148,12 @@ body {
   font-size: 10px;
   padding: 10px;
 }
+.h2li img {
+  margin: 0%;
+  width: 180px;
+  height: 80px;
+  vertical-align: middle;
+}
 
 .afiliate-btn {
   width: 100%;
@@ -151,9 +169,24 @@ body {
   font-weight: 100;
   margin-top: 10px;
   margin-bottom: 10px;
+  transition: 1s;
 }
 
 .afiliate-btn:hover {
   background-color: rgba(139, 13, 102, 0.4);
   transform: scale(1.1);
+  transition: 1s;
+}
+
+.fade-out {
+  animation: fade-out 1s forwards;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
